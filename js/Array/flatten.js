@@ -52,6 +52,25 @@ falttenByReduce(arr);
 
 // ---------------------------------------------------------
 //方法4 es6解构
+var arr=[1,2,[2,3],[3,3,[2,3,[2,3,3]]]];
 
+function flattenByDeconstruction(arr){
+    if(!Array.isArray(arr)) return;
+    while(arr.some(item=>Array.isArray(item))){
+      arr=[].concat(...arr);
+    }
+  return arr;
+}
+flattenByDeconstruction(arr);
+// ---------------------------------------------------------
+//方法5 flat语法 兼容性不高
+
+var arr=[1,2,[2,3],[3,3,[2,3,[2,3,3]]]];
+
+function flattenByHigh(arr,num = Infinity){
+    if(!Array.isArray(arr)) return;
+    return arr.flat(num);
+}
+flattenByHigh(arr);
 
 
