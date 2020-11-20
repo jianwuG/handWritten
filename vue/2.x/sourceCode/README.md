@@ -2,6 +2,7 @@
 ##### 版本2.6.12
 
 ## 官网
+src
 - [compiler 编译相关](https://github.com/vuejs/vue/tree/dev/src/compiler)
 - [core 核心代码 ](https://github.com/vuejs/vue/tree/dev/src/core)
 - [platforms 不同平台的支持](https://github.com/vuejs/vue/tree/dev/src/platforms)

@@ -1,1 +1,27 @@
-### javaScript 基础
+### js深入
+1. [内存空间](blog/1.内存空间/1.内存空间.md)
+2. [执行上下文](blog/2.执行上下文)
+   * [执行上下文](blog/2.执行上下文/2.执行上下文.md)
+   * [变量对象](blog/2.执行上下文/3.变量对象.md)
+   * [作用域与作用域链](blog/2.执行上下文/4.作用域与作用域链.md)
+   * [闭包](blog/2.执行上下文/5.闭包.md)
+   * [this解析](blog/2.执行上下文/6.this解析.md)
+   * [this解析2](blog/2.执行上下文/7.this解析二.md)
+   * [call/apply解析手写](blog/2.执行上下文/8.1callapply解析手写.md)
+   * [bind解析手写](blog/2.执行上下文/8.2%20bind解析手写.md)
+   * [new解析和手写](blog/2.执行上下文/9.new解析和手写.md)
+3. [原型原型链](blog/3.原型原型链)
+
+
+### js使用
+1. [数组常见操作](js/Array)
+   * [数组最值查找](js/Array/findMax.js)
+   * [数组扁平化](js/Array/flatten.js)
+   * [数组去重](js/Array/unique.js)
+   * [数组取交集,差集](js/Array/others.js)
+2. [手写代码](js/handwritten
+   * [深浅拷贝](js/handwritten/copy)
+
+
+### vue深入
+
