@@ -2,7 +2,7 @@
 //方法1 JSON.parse(JSON.stringify())
 //缺点：1.会忽略undefined
 //      2.忽略symbol
-//      3.不能序列化函数
+//      003.不能序列化函数
 //      4.不能解决循环引用
 //      5.不能正确处理new Date()
 //      6.不能处理正则

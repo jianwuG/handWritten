@@ -19,7 +19,7 @@ function getRepeat(){
 getRepeat([1,2,3,4],[1,2,'2'],[2,2,'2']);
 
 //-------------------------------------------------------------------
-//3.多个数组取差集
+//003.多个数组取差集
 
 function getRepeat(){
     let sumArr=[...arguments].flat(Infinity);

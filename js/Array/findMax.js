@@ -86,12 +86,3 @@ function getMaxOrMinByApply(arr,isMax = true){
 getMaxOrMinByApply(arr,false);
 
 
-var arr=[1,1,2,33,22,0,223,55,-1,221,324];
-
-
-function getMaxOrMinByApply2(arr,isMax = true){
-    return isMax?Math.max.apply(Math,arr):Math.min.apply(Math,arr)
-
-}
-
-getMaxOrMinByApply2(arr,false);

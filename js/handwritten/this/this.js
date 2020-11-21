@@ -28,12 +28,12 @@ console.log(b.a);    // ?10
 
 // 1.foo(1)执行，应该不难看出是默认绑定吧 , this指向了window，函数里等价于 window.a = 1,return window;
 // 2.var a = foo(1) 等价于 window.a = window , 很多人都忽略了var a 就是window.a ，将刚刚赋值的 1 替换掉了。
-// 3.所以这里的 a 的值是 window , a.a 也是window ， 即window.a = window ; window.a.a = window;
+// 003.所以这里的 a 的值是 window , a.a 也是window ， 即window.a = window ; window.a.a = window;
 // 4.foo(10) 和第一次一样，都是默认绑定，这个时候，将window.a 赋值成 10 ，注意这里是关键，原来window.a = window ,现在被赋值成了10，
 // 变成了值类型，所以现在 a.a = undefined。(验证这一点只需要将var b = foo(10);删掉，这里的 a.a 还是window)
 // 5.var b = foo(10); 等价于 window.b = window;
 
-//3. 1. new绑定 2.隐性绑定 3. 默认绑定 4.变量污染
+//003. 1. new绑定 2.隐性绑定 003. 默认绑定 4.变量污染
 
 function foo() {
     getName = function () { console.log (1); };
@@ -55,10 +55,10 @@ function getName () { console.log(5);}
 
 foo.getName ();                // 2
                                // 下面为了方便，我就使用输出值来简称每个getName函数
-                               // 这里有小伙伴疑惑是在 2 和 3 之间，觉得应该是3 , 但其实直接设置
+                               // 这里有小伙伴疑惑是在 2 和 003 之间，觉得应该是3 , 但其实直接设置
                                // foo.prototype上的属性，对当前这个对象的属性是没有影响的,如果要使
                                // 用的话，可以foo.prototype.getName() 这样调用 ，这里需要知道的是
-                               // 3 并不会覆盖 2，两者不冲突 ( 当你使用new 创建对象时，这里的
+                               // 003 并不会覆盖 2，两者不冲突 ( 当你使用new 创建对象时，这里的
                                // Prototype 将自动绑定到新对象上，即用new 构造调用的第二个作用)
 
 getName ();                    // 4
@@ -76,19 +76,19 @@ new foo.getName ();            // 2
                                // new 对一个函数进行构造调用 , 即 foo.getName ,构造调用也是调用啊
                                // 该执行还是执行，然后返回一个新对象，输出 2 (虽然这里没有接收新
                                // 创建的对象但是我们可以猜到，是一个函数名为 foo.getName 的对象
-                               // 且__proto__属性里有一个getName函数，是上面设置的 3 函数)
+                               // 且__proto__属性里有一个getName函数，是上面设置的 003 函数)
 
-new foo().getName ();          // 3
+new foo().getName ();          // 003
                                // 这里特别的地方就来了,new 是对一个函数进行构造调用,它直接找到了离它
                                // 最近的函数,foo(),并返回了应该新对象,等价于 var obj = new foo();
                                // obj.getName(); 这样就很清晰了,输出的是之前绑定到prototype上的
-                               // 那个getName  3 ,因为使用new后会将函数的prototype继承给 新对象
+                               // 那个getName  003 ,因为使用new后会将函数的prototype继承给 新对象
 
-new new foo().getName ();      // 3
+new new foo().getName ();      // 003
                                // 哈哈，这个看上去很吓人，让我们来分解一下：
                                // var obj = new foo();
                                // var obj1 = new obj.getName();
-                               // 好了，仔细看看, 这不就是上两题的合体吗,obj 有getName 3, 即输出3
+                               // 好了，仔细看看, 这不就是上两题的合体吗,obj 有getName 003, 即输出3
                                // obj 是一个函数名为 foo的对象,obj1是一个函数名为obj.getName的对象
 
 
