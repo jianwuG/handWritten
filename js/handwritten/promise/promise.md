@@ -1,4 +1,5 @@
 ## 一、Promise介绍
+callback -> promise -> generator -> async/await
 
 ### 基本结构
 ```
@@ -110,4 +111,6 @@ p.then(funciton(){
 谁跑的快，以谁为准执行回调
 
 ## 三、手写
+
+```
 [手写Promise](promise.js)

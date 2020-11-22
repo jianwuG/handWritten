@@ -14,10 +14,15 @@
    * [创建对象的几种方式](blog/3.原型原型链/10.1%20创建对象的几种方式以及优缺点.md)
    * [构造函数](blog/3.原型原型链/10.2%20构造函数.md)
    * [原型](blog/3.原型原型链/11.原型.md)
+   * [原型链](blog/3.原型原型链/12.原型链.md)
+   * [继承](blog/3.原型原型链/13.继承.md)
 4. 高阶函数
 
 99.[其他](blog/99.other)
   * [null和undefined区别](blog/99.other/99.1%20null和undefined.md)
+  * [事件循环机制](blog/99.other/99.2Event Loop.md)
+  * [类型转换](blog/99.other/99.3类型转换.md)
+  * [类型判断](blog/99.other/99.4%20类型判断.md)
 
 
 ### js使用
@@ -28,6 +33,8 @@
    * [数组取交集,差集](js/Array/others.js)
 2. [手写代码](js/handwritten
    * [深浅拷贝](js/handwritten/copy)
+   * [Promise](js/handwritten/promise)
+
 
 
 ### vue深入
