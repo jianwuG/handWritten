@@ -26,6 +26,7 @@
   * apply+Math.max/Math.min
   * es6扩展运算符+Math.max/Math.min
   * eval+Math.max/Math.min
+ * [数组查找值](findOne.js)
   
  *[其他](others.js)
   * 多个数组取交集

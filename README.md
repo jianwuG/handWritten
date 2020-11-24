@@ -23,6 +23,16 @@
   * [事件循环机制](blog/99.other/99.2Event Loop.md)
   * [类型转换](blog/99.other/99.3类型转换.md)
   * [类型判断](blog/99.other/99.4%20类型判断.md)
+    * [类型判断具体类型](js/other/type.js)
+      * 判断空对象
+      * 判断是否是window对象
+      * 判断是否是数组
+      * 判断是否是NaN
+      * 判断是不是 DOM 元素
+      * 判断是不是 类数组
+      
+  * parseFloat/parseInt
+  * setTimeout/setInterval
 
 
 ### js使用
@@ -31,7 +41,9 @@
    * [数组扁平化](js/Array/flatten.js)
    * [数组去重](js/Array/unique.js)
    * [数组取交集,差集](js/Array/others.js)
-2. [手写代码](js/handwritten
+   * [查找数组指定元素](js/Array/findOne.js)
+   * 类数组转数组
+2. [手写代码](js/handwritten)
    * [深浅拷贝](js/handwritten/copy)
    * [Promise](js/handwritten/promise)
 
