@@ -31,7 +31,7 @@
       * 判断是不是 DOM 元素
       * 判断是不是 类数组
       
-  * parseFloat/parseInt
+  * [parseFloat/parseInt](blog/99.other/99.5parseInt.md)
   * setTimeout/setInterval
 
 
