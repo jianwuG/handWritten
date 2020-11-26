@@ -26,7 +26,12 @@ class MySetInterVal {
             const {func,time}={...timerInfo};
             console.time('timeTest');
             let timer=setTimeout(()=>{
-                func();
+                //修复bug 但定时器实际执行次数仍然比预期多一次，实际执行定时器内函数等于实际次数
+                let timerInfo=_this.tasks.find(item=>name===item.name);
+
+                if(timerInfo){
+                    func();
+                }
                 console.timeEnd('timeTest');
                 clearTimeout(timer);
                 inner();
@@ -62,4 +67,3 @@ setTimeout(() => {
     console.timeEnd('ccc')
 }, 6500);
 
-//有bug 会多一次执行
