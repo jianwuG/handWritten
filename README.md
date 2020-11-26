@@ -32,7 +32,8 @@
       * 判断是不是 类数组
       
   * [parseFloat/parseInt](blog/99.other/99.5parseInt.md)
-  * setTimeout/setInterval
+  * [setTimeout/setInterval](blog/99.other/99.6%20setTimeout、setInterval.md)
+
 
 
 ### js使用
@@ -46,6 +47,7 @@
 2. [手写代码](js/handwritten)
    * [深浅拷贝](js/handwritten/copy)
    * [Promise](js/handwritten/promise)
+   * [setTimeout/setInterval模拟实现](js/handwritten/setTimeout.js)
 
 
 
