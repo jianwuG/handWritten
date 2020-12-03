@@ -23,7 +23,7 @@ getRepeat([1,2,3,4],[1,2,'2'],[2,2,'2']);
 
 function getRepeat(){
     let sumArr=[...arguments].flat(Infinity);
-    return newArr= sumArr.filter((item,index)=>{
+    return sumArr.filter((item,index)=>{
         return sumArr.lastIndexOf(item)===sumArr.indexOf(item)
     })
 

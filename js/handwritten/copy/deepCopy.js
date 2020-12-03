@@ -56,7 +56,6 @@ JSON.parse(JSON.stringify(obj));//{name: "aaa", date: "2020-11-09T05:42:27.042Z"
 
 //例4
 //正则转为对象
-// 木易杨
 let obj = {
     name: "aa",
     a: /'123'/
